@@ -1,0 +1,2505 @@
+[2024-07-03 18:47:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 18:47:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 18:49:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 18:49:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 18:49:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 18:50:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 18:50:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 18:50:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 18:50:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 18:50:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:14:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:14:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:14:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:14:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:14:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:14:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:14:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:14:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:16:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:16:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:16:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:16:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:16:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:16:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:16:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:16:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:20:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:20:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:20:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:20:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:20:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:25:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:25:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:25:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:25:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:25:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:25:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:25:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:25:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:32:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:32:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:32:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:32:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:32:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:32:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:32:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:32:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:33:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:33:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:33:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:33:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:33:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:33:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:33:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:33:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:39:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:39:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:39:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:39:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:39:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:39:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:39:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:39:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:47:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:47:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:47:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:47:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:47:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:47:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:47:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:47:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 19:49:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 19:49:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 19:49:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 19:49:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 19:49:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 19:49:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 19:49:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 19:49:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:04:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:04:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:04:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:04:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:04:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:04:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:04:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:04:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:05:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:05:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:05:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:05:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:05:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:05:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:05:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:05:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:07:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:07:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:07:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:07:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:07:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:07:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:07:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:07:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:07:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:07:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:07:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:07:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:07:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:07:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:07:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:07:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:12:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:12:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:12:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:12:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:12:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:12:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:12:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:12:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:14:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:14:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:14:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:14:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:14:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:14:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:14:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:14:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:14:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000492	loss: 4.212	
+[2024-07-03 20:15:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:15:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:15:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:15:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:15:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:15:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:15:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:15:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:15:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000492	loss: 4.212	
+[2024-07-03 20:16:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 441): INFO Full config saved to result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/config.json
+[2024-07-03 20:16:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 442): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 32
+  CACHE_MODE: part
+  DATASET: office31
+  DATA_PATH: datasets/office31
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  MEAN:
+  - 0.485
+  - 0.456
+  - 0.406
+  NUM_WORKERS: 4
+  PIN_MEMORY: true
+  SOURCE: dslr
+  STD:
+  - 0.229
+  - 0.224
+  - 0.225
+  TARGET: webcam
+EVAL_MODE: false
+LOCAL_RANK:
+- 0
+MODEL:
+  DEIT:
+    DEPTH: 12
+    EMBED_DIM: 768
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+  DROP_PATH_RATE: 0.1
+  DROP_RATE: 0.0
+  NAME: ds_swin_base_patch4_window7_224
+  NUM_CLASSES: 31
+  RESUME: ''
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 128
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 4
+    - 8
+    - 16
+    - 32
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  TYPE: swin
+  VIT:
+    DEPTH: 12
+    EMBED_DIM: 786
+    NUM_HEADS: 12
+    PATCH_SIZE: 16
+OUTPUT: result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM
+PRINT_FREQ: 10000
+SAVE_FREQ: 25
+SEED: 123
+TAG: 2024_07_03_office31_dslr_webcam_PM
+TEST:
+  CROP: true
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  BASE_LR: 5.0e-06
+  BIAS_WEIGHT_DECAY: 0.0
+  CLIP_GRAD: 5.0
+  EPOCHS: 100
+  LR_MULT: 10
+  MIN_LR_MULT: 0.25
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: true
+  WARMUP_EPOCHS: 10
+  WARMUP_LR_MULT: 0.1
+  WEIGHT_DECAY: 0.05
+head_lr_ratio: 10.0
+hyper_parameters:
+  alpha: 0.8
+  beta: 3
+log: log/
+sourceOnly: false
+
+[2024-07-03 20:16:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 141): INFO Creating base_model:swin/ds_swin_base_patch4_window7_224
+[2024-07-03 20:17:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 149): INFO ======================================
+[2024-07-03 20:17:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 150): INFO source: dslr
+[2024-07-03 20:17:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 151): INFO target: webcam
+[2024-07-03 20:17:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 152): INFO ======================================
+[2024-07-03 20:17:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 172): INFO ==============>Start training....................
+[2024-07-03 20:17:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000492	loss: 4.212	
+[2024-07-03 20:17:16 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:17:16 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:17:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [0/100]	val acc1 80.6%	
+[2024-07-03 20:17:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 80.60%	
+[2024-07-03 20:17:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 0 with test images verification takes 0:00:15
+[2024-07-03 20:17:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000483	loss: 3.407	
+[2024-07-03 20:17:30 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:17:31 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:17:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [1/100]	val acc1 89.7%	
+[2024-07-03 20:17:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 89.71%	
+[2024-07-03 20:17:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 1 with test images verification takes 0:00:14
+[2024-07-03 20:17:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000475	loss: 2.558	
+[2024-07-03 20:17:45 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:17:46 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:17:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [2/100]	val acc1 97.9%	
+[2024-07-03 20:17:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 97.92%	
+[2024-07-03 20:17:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 2 with test images verification takes 0:00:14
+[2024-07-03 20:17:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000467	loss: 2.113	
+[2024-07-03 20:18:00 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:18:00 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:18:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [3/100]	val acc1 99.0%	
+[2024-07-03 20:18:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 98.96%	
+[2024-07-03 20:18:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 3 with test images verification takes 0:00:14
+[2024-07-03 20:18:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000460	loss: 2.045	
+[2024-07-03 20:18:15 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:18:15 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:18:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [4/100]	val acc1 99.1%	
+[2024-07-03 20:18:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:18:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 4 with test images verification takes 0:00:14
+[2024-07-03 20:18:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000452	loss: 1.995	
+[2024-07-03 20:18:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [5/100]	val acc1 99.0%	
+[2024-07-03 20:18:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:18:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 5 with test images verification takes 0:00:14
+[2024-07-03 20:18:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000445	loss: 1.976	
+[2024-07-03 20:18:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [6/100]	val acc1 99.1%	
+[2024-07-03 20:18:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:18:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 6 with test images verification takes 0:00:14
+[2024-07-03 20:18:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000439	loss: 1.925	
+[2024-07-03 20:18:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [7/100]	val acc1 99.1%	
+[2024-07-03 20:18:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:18:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 7 with test images verification takes 0:00:14
+[2024-07-03 20:19:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000432	loss: 1.918	
+[2024-07-03 20:19:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [8/100]	val acc1 99.1%	
+[2024-07-03 20:19:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:19:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 8 with test images verification takes 0:00:14
+[2024-07-03 20:19:24 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000426	loss: 1.925	
+[2024-07-03 20:19:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [9/100]	val acc1 99.1%	
+[2024-07-03 20:19:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:19:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 9 with test images verification takes 0:00:14
+[2024-07-03 20:19:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000420	loss: 1.903	
+[2024-07-03 20:19:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [10/100]	val acc1 99.1%	
+[2024-07-03 20:19:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.09%	
+[2024-07-03 20:19:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 10 with test images verification takes 0:00:14
+[2024-07-03 20:19:53 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000414	loss: 1.869	
+[2024-07-03 20:19:56 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:19:57 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:19:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [11/100]	val acc1 99.2%	
+[2024-07-03 20:19:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.22%	
+[2024-07-03 20:19:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 11 with test images verification takes 0:00:14
+[2024-07-03 20:20:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000408	loss: 1.928	
+[2024-07-03 20:20:11 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:20:11 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:20:11 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [12/100]	val acc1 99.3%	
+[2024-07-03 20:20:11 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:20:11 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 12 with test images verification takes 0:00:14
+[2024-07-03 20:20:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000403	loss: 1.892	
+[2024-07-03 20:20:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [13/100]	val acc1 99.2%	
+[2024-07-03 20:20:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:20:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 13 with test images verification takes 0:00:14
+[2024-07-03 20:20:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000397	loss: 1.877	
+[2024-07-03 20:20:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [14/100]	val acc1 99.2%	
+[2024-07-03 20:20:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:20:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 14 with test images verification takes 0:00:14
+[2024-07-03 20:20:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000392	loss: 1.909	
+[2024-07-03 20:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [15/100]	val acc1 99.2%	
+[2024-07-03 20:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:20:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 15 with test images verification takes 0:00:14
+[2024-07-03 20:21:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000387	loss: 1.874	
+[2024-07-03 20:21:09 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [16/100]	val acc1 99.2%	
+[2024-07-03 20:21:09 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:21:09 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 16 with test images verification takes 0:00:14
+[2024-07-03 20:21:20 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000382	loss: 1.804	
+[2024-07-03 20:21:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [17/100]	val acc1 99.2%	
+[2024-07-03 20:21:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:21:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 17 with test images verification takes 0:00:14
+[2024-07-03 20:21:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000377	loss: 1.873	
+[2024-07-03 20:21:38 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [18/100]	val acc1 99.2%	
+[2024-07-03 20:21:38 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:21:38 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 18 with test images verification takes 0:00:14
+[2024-07-03 20:21:49 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000373	loss: 1.861	
+[2024-07-03 20:21:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [19/100]	val acc1 99.2%	
+[2024-07-03 20:21:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:21:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 19 with test images verification takes 0:00:14
+[2024-07-03 20:22:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000368	loss: 1.900	
+[2024-07-03 20:22:07 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [20/100]	val acc1 99.3%	
+[2024-07-03 20:22:07 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:22:07 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 20 with test images verification takes 0:00:14
+[2024-07-03 20:22:18 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000364	loss: 1.804	
+[2024-07-03 20:22:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [21/100]	val acc1 99.3%	
+[2024-07-03 20:22:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:22:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 21 with test images verification takes 0:00:14
+[2024-07-03 20:22:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000360	loss: 1.868	
+[2024-07-03 20:22:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [22/100]	val acc1 99.2%	
+[2024-07-03 20:22:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:22:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 22 with test images verification takes 0:00:14
+[2024-07-03 20:22:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000356	loss: 1.803	
+[2024-07-03 20:22:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [23/100]	val acc1 99.2%	
+[2024-07-03 20:22:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:22:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 23 with test images verification takes 0:00:14
+[2024-07-03 20:23:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000352	loss: 1.773	
+[2024-07-03 20:23:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [24/100]	val acc1 99.2%	
+[2024-07-03 20:23:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:23:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 24 with test images verification takes 0:00:14
+[2024-07-03 20:23:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000348	loss: 1.811	
+[2024-07-03 20:23:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [25/100]	val acc1 99.2%	
+[2024-07-03 20:23:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:23:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 25 with test images verification takes 0:00:14
+[2024-07-03 20:23:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000344	loss: 1.823	
+[2024-07-03 20:23:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [26/100]	val acc1 99.2%	
+[2024-07-03 20:23:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:23:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 26 with test images verification takes 0:00:14
+[2024-07-03 20:23:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000340	loss: 1.813	
+[2024-07-03 20:23:48 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [27/100]	val acc1 99.2%	
+[2024-07-03 20:23:48 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:23:48 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 27 with test images verification takes 0:00:14
+[2024-07-03 20:23:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000337	loss: 1.792	
+[2024-07-03 20:24:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [28/100]	val acc1 99.3%	
+[2024-07-03 20:24:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:24:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 28 with test images verification takes 0:00:14
+[2024-07-03 20:24:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000333	loss: 1.777	
+[2024-07-03 20:24:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [29/100]	val acc1 99.2%	
+[2024-07-03 20:24:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:24:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 29 with test images verification takes 0:00:14
+[2024-07-03 20:24:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000330	loss: 1.800	
+[2024-07-03 20:24:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [30/100]	val acc1 99.2%	
+[2024-07-03 20:24:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:24:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 30 with test images verification takes 0:00:14
+[2024-07-03 20:24:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000326	loss: 1.805	
+[2024-07-03 20:24:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [31/100]	val acc1 99.3%	
+[2024-07-03 20:24:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:24:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 31 with test images verification takes 0:00:14
+[2024-07-03 20:24:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000323	loss: 1.820	
+[2024-07-03 20:25:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [32/100]	val acc1 99.2%	
+[2024-07-03 20:25:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:25:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 32 with test images verification takes 0:00:14
+[2024-07-03 20:25:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000320	loss: 1.803	
+[2024-07-03 20:25:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [33/100]	val acc1 99.3%	
+[2024-07-03 20:25:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:25:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 33 with test images verification takes 0:00:14
+[2024-07-03 20:25:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000317	loss: 1.783	
+[2024-07-03 20:25:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [34/100]	val acc1 99.2%	
+[2024-07-03 20:25:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:25:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 34 with test images verification takes 0:00:14
+[2024-07-03 20:25:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000314	loss: 1.825	
+[2024-07-03 20:25:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [35/100]	val acc1 99.2%	
+[2024-07-03 20:25:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:25:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 35 with test images verification takes 0:00:14
+[2024-07-03 20:25:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000311	loss: 1.843	
+[2024-07-03 20:25:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [36/100]	val acc1 99.2%	
+[2024-07-03 20:25:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:25:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 36 with test images verification takes 0:00:14
+[2024-07-03 20:26:09 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000308	loss: 1.832	
+[2024-07-03 20:26:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [37/100]	val acc1 99.2%	
+[2024-07-03 20:26:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:26:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 37 with test images verification takes 0:00:14
+[2024-07-03 20:26:24 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000305	loss: 1.789	
+[2024-07-03 20:26:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [38/100]	val acc1 99.2%	
+[2024-07-03 20:26:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:26:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 38 with test images verification takes 0:00:14
+[2024-07-03 20:26:38 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000302	loss: 1.767	
+[2024-07-03 20:26:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [39/100]	val acc1 99.2%	
+[2024-07-03 20:26:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:26:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 39 with test images verification takes 0:00:14
+[2024-07-03 20:26:53 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000299	loss: 1.840	
+[2024-07-03 20:26:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [40/100]	val acc1 99.2%	
+[2024-07-03 20:26:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:26:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 40 with test images verification takes 0:00:14
+[2024-07-03 20:27:07 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000297	loss: 1.786	
+[2024-07-03 20:27:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [41/100]	val acc1 99.2%	
+[2024-07-03 20:27:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:27:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 41 with test images verification takes 0:00:14
+[2024-07-03 20:27:22 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000294	loss: 1.820	
+[2024-07-03 20:27:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [42/100]	val acc1 99.2%	
+[2024-07-03 20:27:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:27:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 42 with test images verification takes 0:00:14
+[2024-07-03 20:27:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000291	loss: 1.770	
+[2024-07-03 20:27:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [43/100]	val acc1 99.2%	
+[2024-07-03 20:27:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:27:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 43 with test images verification takes 0:00:14
+[2024-07-03 20:27:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000289	loss: 1.834	
+[2024-07-03 20:27:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [44/100]	val acc1 99.2%	
+[2024-07-03 20:27:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:27:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 44 with test images verification takes 0:00:14
+[2024-07-03 20:28:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000286	loss: 1.809	
+[2024-07-03 20:28:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [45/100]	val acc1 99.2%	
+[2024-07-03 20:28:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:28:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 45 with test images verification takes 0:00:14
+[2024-07-03 20:28:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000284	loss: 1.767	
+[2024-07-03 20:28:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [46/100]	val acc1 99.2%	
+[2024-07-03 20:28:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:28:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 46 with test images verification takes 0:00:14
+[2024-07-03 20:28:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000282	loss: 1.784	
+[2024-07-03 20:28:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [47/100]	val acc1 99.2%	
+[2024-07-03 20:28:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.35%	
+[2024-07-03 20:28:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 47 with test images verification takes 0:00:14
+[2024-07-03 20:28:48 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000279	loss: 1.756	
+[2024-07-03 20:28:52 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saving......
+[2024-07-03 20:28:52 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_best.pth saved !!!
+[2024-07-03 20:28:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [48/100]	val acc1 99.5%	
+[2024-07-03 20:28:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:28:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 48 with test images verification takes 0:00:14
+[2024-07-03 20:29:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000277	loss: 1.763	
+[2024-07-03 20:29:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [49/100]	val acc1 99.3%	
+[2024-07-03 20:29:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:29:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 49 with test images verification takes 0:00:14
+[2024-07-03 20:29:18 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000275	loss: 1.770	
+[2024-07-03 20:29:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [50/100]	val acc1 99.2%	
+[2024-07-03 20:29:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:29:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 50 with test images verification takes 0:00:14
+[2024-07-03 20:29:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000272	loss: 1.746	
+[2024-07-03 20:29:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [51/100]	val acc1 99.3%	
+[2024-07-03 20:29:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:29:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 51 with test images verification takes 0:00:14
+[2024-07-03 20:29:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000270	loss: 1.794	
+[2024-07-03 20:29:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [52/100]	val acc1 99.2%	
+[2024-07-03 20:29:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:29:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 52 with test images verification takes 0:00:14
+[2024-07-03 20:30:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000268	loss: 1.770	
+[2024-07-03 20:30:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [53/100]	val acc1 99.3%	
+[2024-07-03 20:30:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:30:04 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 53 with test images verification takes 0:00:14
+[2024-07-03 20:30:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000266	loss: 1.757	
+[2024-07-03 20:30:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [54/100]	val acc1 99.2%	
+[2024-07-03 20:30:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:30:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 54 with test images verification takes 0:00:14
+[2024-07-03 20:30:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000264	loss: 1.722	
+[2024-07-03 20:30:33 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [55/100]	val acc1 99.2%	
+[2024-07-03 20:30:33 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:30:33 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 55 with test images verification takes 0:00:14
+[2024-07-03 20:30:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000262	loss: 1.758	
+[2024-07-03 20:30:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [56/100]	val acc1 99.2%	
+[2024-07-03 20:30:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:30:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 56 with test images verification takes 0:00:14
+[2024-07-03 20:30:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000260	loss: 1.767	
+[2024-07-03 20:31:02 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [57/100]	val acc1 99.2%	
+[2024-07-03 20:31:02 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:31:02 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 57 with test images verification takes 0:00:14
+[2024-07-03 20:31:13 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000258	loss: 1.770	
+[2024-07-03 20:31:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [58/100]	val acc1 99.2%	
+[2024-07-03 20:31:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:31:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 58 with test images verification takes 0:00:14
+[2024-07-03 20:31:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000256	loss: 1.773	
+[2024-07-03 20:31:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [59/100]	val acc1 99.2%	
+[2024-07-03 20:31:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:31:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 59 with test images verification takes 0:00:14
+[2024-07-03 20:31:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000254	loss: 1.780	
+[2024-07-03 20:31:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [60/100]	val acc1 99.2%	
+[2024-07-03 20:31:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:31:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 60 with test images verification takes 0:00:14
+[2024-07-03 20:31:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000252	loss: 1.749	
+[2024-07-03 20:32:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [61/100]	val acc1 99.2%	
+[2024-07-03 20:32:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:32:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 61 with test images verification takes 0:00:14
+[2024-07-03 20:32:11 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000251	loss: 1.717	
+[2024-07-03 20:32:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [62/100]	val acc1 99.2%	
+[2024-07-03 20:32:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:32:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 62 with test images verification takes 0:00:14
+[2024-07-03 20:32:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000249	loss: 1.758	
+[2024-07-03 20:32:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [63/100]	val acc1 99.3%	
+[2024-07-03 20:32:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:32:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 63 with test images verification takes 0:00:14
+[2024-07-03 20:32:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000247	loss: 1.773	
+[2024-07-03 20:32:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [64/100]	val acc1 99.2%	
+[2024-07-03 20:32:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:32:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 64 with test images verification takes 0:00:14
+[2024-07-03 20:32:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000245	loss: 1.768	
+[2024-07-03 20:32:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [65/100]	val acc1 99.2%	
+[2024-07-03 20:32:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:32:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 65 with test images verification takes 0:00:14
+[2024-07-03 20:33:09 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000244	loss: 1.771	
+[2024-07-03 20:33:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [66/100]	val acc1 99.3%	
+[2024-07-03 20:33:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:33:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 66 with test images verification takes 0:00:14
+[2024-07-03 20:33:24 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000242	loss: 1.767	
+[2024-07-03 20:33:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [67/100]	val acc1 99.2%	
+[2024-07-03 20:33:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:33:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 67 with test images verification takes 0:00:14
+[2024-07-03 20:33:38 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000240	loss: 1.751	
+[2024-07-03 20:33:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [68/100]	val acc1 99.2%	
+[2024-07-03 20:33:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:33:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 68 with test images verification takes 0:00:14
+[2024-07-03 20:33:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000239	loss: 1.804	
+[2024-07-03 20:33:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [69/100]	val acc1 99.2%	
+[2024-07-03 20:33:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:33:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 69 with test images verification takes 0:00:14
+[2024-07-03 20:34:07 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000237	loss: 1.746	
+[2024-07-03 20:34:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [70/100]	val acc1 99.2%	
+[2024-07-03 20:34:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:34:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 70 with test images verification takes 0:00:14
+[2024-07-03 20:34:21 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000236	loss: 1.723	
+[2024-07-03 20:34:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [71/100]	val acc1 99.2%	
+[2024-07-03 20:34:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:34:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 71 with test images verification takes 0:00:14
+[2024-07-03 20:34:36 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000234	loss: 1.745	
+[2024-07-03 20:34:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [72/100]	val acc1 99.3%	
+[2024-07-03 20:34:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:34:39 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 72 with test images verification takes 0:00:14
+[2024-07-03 20:34:50 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000233	loss: 1.813	
+[2024-07-03 20:34:53 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [73/100]	val acc1 99.2%	
+[2024-07-03 20:34:53 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:34:53 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 73 with test images verification takes 0:00:14
+[2024-07-03 20:35:05 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000231	loss: 1.767	
+[2024-07-03 20:35:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [74/100]	val acc1 99.2%	
+[2024-07-03 20:35:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:35:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 74 with test images verification takes 0:00:14
+[2024-07-03 20:35:19 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000230	loss: 1.730	
+[2024-07-03 20:35:22 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [75/100]	val acc1 99.2%	
+[2024-07-03 20:35:22 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:35:22 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 75 with test images verification takes 0:00:14
+[2024-07-03 20:35:34 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000228	loss: 1.765	
+[2024-07-03 20:35:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [76/100]	val acc1 99.2%	
+[2024-07-03 20:35:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:35:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 76 with test images verification takes 0:00:14
+[2024-07-03 20:35:48 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000227	loss: 1.760	
+[2024-07-03 20:35:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [77/100]	val acc1 99.2%	
+[2024-07-03 20:35:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:35:51 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 77 with test images verification takes 0:00:14
+[2024-07-03 20:36:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000225	loss: 1.776	
+[2024-07-03 20:36:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [78/100]	val acc1 99.2%	
+[2024-07-03 20:36:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:36:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 78 with test images verification takes 0:00:14
+[2024-07-03 20:36:17 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000224	loss: 1.765	
+[2024-07-03 20:36:20 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [79/100]	val acc1 99.2%	
+[2024-07-03 20:36:20 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:36:20 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 79 with test images verification takes 0:00:14
+[2024-07-03 20:36:31 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000223	loss: 1.736	
+[2024-07-03 20:36:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [80/100]	val acc1 99.2%	
+[2024-07-03 20:36:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:36:35 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 80 with test images verification takes 0:00:14
+[2024-07-03 20:36:46 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000221	loss: 1.748	
+[2024-07-03 20:36:49 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [81/100]	val acc1 99.2%	
+[2024-07-03 20:36:49 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:36:49 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 81 with test images verification takes 0:00:14
+[2024-07-03 20:37:00 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000220	loss: 1.791	
+[2024-07-03 20:37:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [82/100]	val acc1 99.2%	
+[2024-07-03 20:37:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:37:03 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 82 with test images verification takes 0:00:14
+[2024-07-03 20:37:15 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000219	loss: 1.709	
+[2024-07-03 20:37:18 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [83/100]	val acc1 99.2%	
+[2024-07-03 20:37:18 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:37:18 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 83 with test images verification takes 0:00:14
+[2024-07-03 20:37:29 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000217	loss: 1.749	
+[2024-07-03 20:37:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [84/100]	val acc1 99.2%	
+[2024-07-03 20:37:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:37:32 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 84 with test images verification takes 0:00:14
+[2024-07-03 20:37:44 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000216	loss: 1.736	
+[2024-07-03 20:37:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [85/100]	val acc1 99.2%	
+[2024-07-03 20:37:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:37:47 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 85 with test images verification takes 0:00:14
+[2024-07-03 20:37:58 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000215	loss: 1.736	
+[2024-07-03 20:38:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [86/100]	val acc1 99.2%	
+[2024-07-03 20:38:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:38:01 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 86 with test images verification takes 0:00:14
+[2024-07-03 20:38:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000213	loss: 1.775	
+[2024-07-03 20:38:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [87/100]	val acc1 99.3%	
+[2024-07-03 20:38:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:38:16 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 87 with test images verification takes 0:00:14
+[2024-07-03 20:38:27 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000212	loss: 1.724	
+[2024-07-03 20:38:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [88/100]	val acc1 99.2%	
+[2024-07-03 20:38:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:38:30 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 88 with test images verification takes 0:00:14
+[2024-07-03 20:38:42 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000211	loss: 1.768	
+[2024-07-03 20:38:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [89/100]	val acc1 99.5%	
+[2024-07-03 20:38:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:38:45 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 89 with test images verification takes 0:00:14
+[2024-07-03 20:38:56 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000210	loss: 1.816	
+[2024-07-03 20:38:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [90/100]	val acc1 99.2%	
+[2024-07-03 20:38:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:38:59 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 90 with test images verification takes 0:00:14
+[2024-07-03 20:39:11 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000209	loss: 1.756	
+[2024-07-03 20:39:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [91/100]	val acc1 99.2%	
+[2024-07-03 20:39:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:39:14 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 91 with test images verification takes 0:00:14
+[2024-07-03 20:39:25 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000207	loss: 1.736	
+[2024-07-03 20:39:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [92/100]	val acc1 99.2%	
+[2024-07-03 20:39:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:39:28 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 92 with test images verification takes 0:00:14
+[2024-07-03 20:39:40 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000206	loss: 1.709	
+[2024-07-03 20:39:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [93/100]	val acc1 99.2%	
+[2024-07-03 20:39:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:39:43 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 93 with test images verification takes 0:00:14
+[2024-07-03 20:39:54 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000205	loss: 1.707	
+[2024-07-03 20:39:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [94/100]	val acc1 99.3%	
+[2024-07-03 20:39:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:39:57 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 94 with test images verification takes 0:00:14
+[2024-07-03 20:40:08 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000204	loss: 1.744	
+[2024-07-03 20:40:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [95/100]	val acc1 99.2%	
+[2024-07-03 20:40:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:40:12 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 95 with test images verification takes 0:00:14
+[2024-07-03 20:40:23 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000203	loss: 1.767	
+[2024-07-03 20:40:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [96/100]	val acc1 99.2%	
+[2024-07-03 20:40:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:40:26 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 96 with test images verification takes 0:00:14
+[2024-07-03 20:40:37 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000202	loss: 1.755	
+[2024-07-03 20:40:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [97/100]	val acc1 99.2%	
+[2024-07-03 20:40:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:40:41 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 97 with test images verification takes 0:00:14
+[2024-07-03 20:40:52 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000201	loss: 1.719	
+[2024-07-03 20:40:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [98/100]	val acc1 99.2%	
+[2024-07-03 20:40:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:40:55 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 98 with test images verification takes 0:00:14
+[2024-07-03 20:41:06 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 305): INFO lr: 0.0000200	loss: 1.770	
+[2024-07-03 20:41:07 ds_swin_base_patch4_window7_224] (utils.py 46): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_99.pth saving......
+[2024-07-03 20:41:07 ds_swin_base_patch4_window7_224] (utils.py 48): INFO result/ds_swin_base_patch4_window7_224/2024_07_03_office31_dslr_webcam_PM/ckpt_epoch_99.pth saved !!!
+[2024-07-03 20:41:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 193): INFO Train: [99/100]	val acc1 99.2%	
+[2024-07-03 20:41:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 196): INFO Max accuracy: 99.48%	
+[2024-07-03 20:41:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 198): INFO EPOCH 99 with test images verification takes 0:00:14
+[2024-07-03 20:41:10 ds_swin_base_patch4_window7_224] (dist_pmTrans.py 211): INFO Training time 0:24:09

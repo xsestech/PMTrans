@@ -233,16 +233,16 @@ def train_one_epoch(config, model, dset_loaders, optimizer, epoch, writer,mem_fe
     iter_target = iter(dset_loaders['target_train'])
     for idx in tqdm(range(num_steps)):
         try:
-            samples_source, label_source = iter_source.next()
+            samples_source, label_source = next(iter_source)
         except:
             iter_source = iter(dset_loaders['source_train'])
-            samples_source, label_source = iter_source.next()
+            samples_source, label_source = next(iter_source)
 
         try:
-            samples_target, _, img_idx = iter_target.next()
+            samples_target, _, img_idx = next(iter_target)
         except:
             iter_target = iter(dset_loaders['target_train'])
-            samples_target, _, img_idx = iter_target.next()
+            samples_target, _, img_idx = next(iter_target)
 
         idx_step = epoch * num_steps + idx
         optimizer = inv_lr_scheduler(optimizer, idx_step, lr=config.TRAIN.BASE_LR)
@@ -337,7 +337,7 @@ def validate(data_loader, model, config):
         size =0
         correct_add=0
         for idx in range(len(data_loader)):
-            batch_val, target = iter_val.next()
+            batch_val, target = next(iter_val)
 
             images = (batch_val).cuda(non_blocking=True)
             target = (target).cuda(non_blocking=True)
@@ -385,7 +385,7 @@ def validate(data_loader, model, config):
         end = time.time()
         iter_val = iter(data_loader)
         for idx in range(len(data_loader)):
-            batch_val, target = iter_val.next()
+            batch_val, target = next(iter_val)
 
             images = (batch_val).cuda(non_blocking=True)
             target = (target).cuda(non_blocking=True)
